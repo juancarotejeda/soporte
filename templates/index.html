@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Direccion tecnica</title> 
+<head>
+<link rel="webside icon" type="png" href="/static/favicon/favicon-32x32.png">    
+<link href="/static/css/estilo.css" rel="stylesheet"> 
+</head>  
+  
+<header class="headers">  
+<div class="logo">
+   <img src="/static/imagenes/logo-motoben.jpg" alt="logo de la Adm.">
+</div> 
+<nav class="menu" id="menu">
+  <ul>
+    <li><a href="{{url_for('login')}}">SALIR</a></li>
+  </ul> 
+ </nav>
+</header>
+<body>
+<section id="n_parada"> 
+    <fieldset class="crear_p">  
+    <form action="/crear_nueva_p" method="POST" > 
+    <h1>CREAR PARADA</h1>        
+            <ol> 
+            <li>
+            <h3>Datos de la parada</h3>
+            </li> 
+            <li>
+             <div class="orden">   
+            <label for="#codigo">Codigo</label>
+            <input id="codigo" name="codigo" type="text" placeholder="Escribe el codigo para la parada" required autofocus>
+            </div>
+            </li>            
+            <li>
+            <div class="orden">    
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Escribe el nombre de la parada" required autofocus>
+            </div>
+            </li>
+            <li>
+            <div class="orden">      
+            <label for="direccion">Direccion</label>
+            <input id="direccion" name="direccion" type="text" placeholder="direccion" required>
+            </div>
+            </li>
+            <li>
+            <div class="orden">      
+            <label for="municipio">Municipio/Sector</label>
+            <input id="municipio" name="municipio" type="text" required>
+            </div>
+            </li>
+            <li>
+            <div class="orden">      
+            <label for="provincia">Provincia</label>
+            <input id="provincia" name="provincia" type="text" required>
+            </div>
+            </li>
+            <li>
+            <div class="orden">     
+            <label for="zona">Zona geografica</label>
+            <select id="zona" name="zona">
+                <optgroup label="">
+                <option selected>Distrito Nacional</option> 
+                <option >Gran Santo Domingo</option>
+                <option >Norte</option>
+                <option >Sur</option>
+                <option >Este</option>
+                </optgroup>
+            </select>
+            </div>
+            </li>
+            <li>
+            <div class="orden">     
+            <label for="cuota">Cuotas</label>
+            <input id="cuota" name="cuota" type="text" required>
+            </div>
+            </li>
+            <li>
+            <div class="orden">     
+            <label for="pago">Pago</label>
+            <select id="pago" name="pago">
+                <optgroup label="">
+                <option selected>Diario</option> 
+                <option >Semanal</option>
+                <option >Quincenal</option>
+                </optgroup>
+            </select>
+            </div>
+            </li>                  
+            <li>
+            <div class="orden">      
+            <label for="banco">Banco</label>
+            <select id="banco" name="banco">
+                <optgroup label="">
+                   <option selected></option> 
+                   <option >Banrreservas</option>
+                   <option >Banco popular</option>
+                   <option>Banco BHD</option>
+                </optgroup>
+            </select>
+            </div>
+            </li>
+            <li>
+            <div class="orden">     
+            <label for="cuenta">Num. de cuenta</label>
+            <input id="cuenta" name="cuenta" type="number" placeholder="Ej. 00166889999" required>
+            </div>
+        </li>
+        <li>
+        <button type="reset">Limpiar</button>      
+        <button type="submit">Crear Parada</button>                    
+        </li>
+        </ol>
+        </form>     
+        </fieldset>            
+        </section>
+
+        <section id="n_asociado"> 
+        <fieldset class="agregar_as">
+        <form action="/n_miembro" method="POST" > 
+        <h1>AGREGAR  ASOCIADO</h1>      
+        <ol>    
+        <li>
+        <div class="orden">     
+        <label for="E-parada">Elegir parada</label>
+        <select id="E-parada" name="E-parada" required> 
+                <optgroup label="parada">
+                <option selected></option>
+                {%for parada in selector_paradas%}
+                <option value = {{parada}} >{{parada}}</option>
+                {%endfor%}
+                </optgroup>
+        </select>
+        </div>
+        </li> 
+        <li>
+        <div class="orden">     
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" type="text" required autofocus>
+        </div> 
+        </li>
+        <li>
+        <div class="orden">     
+        <label for="cedula">Cedula</label>
+        <input id="cedula" name="cedula" type="text"  required>
+        </div>
+        </li>
+        <li>
+        <div class="orden">     
+        <label for="telefono">Telefono</label>
+        <input id="telefono" name="telefono" type="text" required>
+        </div>
+        </li>
+        <li>
+        <div class="orden">     
+        <label for="funcion">Funcion</label>
+        <input id="funcion" name="funcion" type="text" required>
+        </div>
+        </li>
+        <li>
+        <button type="reset">Limpiar</button>   
+        <button type="submit">Agregar Asociado</button>       
+        </li>
+        </ol>
+        </form>
+        </fieldset> 
+        </section>

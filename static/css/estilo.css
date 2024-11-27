@@ -1,0 +1,442 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: autos;
+
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(/static/imagenes/imagen.jpg);
+  background-size:100%;
+  background-attachment:fixed;
+
+}
+
+
+
+
+
+
+
+
+
+.headers .logo img{
+  height: 50px;
+  width:95px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s;
+}  
+
+.headers .logo{
+ cursor: pointer;
+}
+
+.headers .logo img:hover{
+   transform: scale(1.2);
+   }
+
+
+   .menu nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .menu li {
+      float: left;
+    }
+    
+    .menu li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .menu li a:hover {
+      background-color: #111;
+    }
+
+    @media screen and (max-width: 600px) {
+      .menu li {
+        float: none;
+      }
+    }
+
+    .crear_p{
+      background-color: #eddddd;
+      color: #000000;
+      font-size: 12px;
+      width: auto;
+      padding-left: 10px;
+      border:solid 10px LightSteelBlue;
+      padding-bottom: 10px;
+      overflow: hidden;
+      }
+
+    .orden{
+      display: flex;
+      justify-content: end;
+      align-items: center;
+     margin-right: 250px;
+    }  
+
+
+.crear_p h1{
+    text-align: center;          
+    } 
+    
+    .crear_p  ol li{
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+
+    .crear_p input{
+      font-size:12px;
+      background: yellow;
+      color: #000000;
+      border:solid 1px Green;
+      border-radius: 5px;
+      width: 150px;
+      height: 30px;
+      margin-left: 20px;
+      }
+
+      .crear_p select{
+        font-size:12px;
+        background: yellow;
+        color: #000000;
+        border:solid 1px Green;
+        border-radius: 5px;
+        width: 150px;
+        height: 30px;
+        margin-left: 20px;
+      }
+
+     .crear_p label{
+      font-weight: 700;
+     }
+
+     .crear_p button{
+      font-size:12px;
+      background: yellow;
+      border:solid 1px Green;
+      width: 150px;
+      height: 30px;
+      float: right;
+      margin-right: 250px;
+      margin-bottom: 5px;
+      }
+
+
+
+     /*======================agregar_as===========================*/
+
+     .agregar_as{
+      background-color: #eddddd;
+      color: #000000;
+      font-size: 12px;
+      width: auto;
+      padding-left: 10px;
+      border:solid 10px LightSteelBlue;
+      overflow: hidden;
+      }
+
+      .agregar_as h1{
+        text-align: center;          
+        } 
+
+      .agregar_as ol li{
+        list-style: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        }
+      
+      .agregar_as input{
+        font-size:12px;
+        background: yellow;
+        color: #000000;
+        border:solid 1px Green;
+        border-radius: 5px;
+        width: 150px;
+        height: 30px;
+        margin-left: 20px;
+        }
+      
+      .agregar_as select{
+          font-size:12px;
+          background: yellow;
+          color: #000000;
+          border:solid 1px Green;
+          border-radius: 5px;
+          width: 150px;
+          height: 30px;
+          margin-left: 20px;
+        }
+  
+      .agregar_as label{
+            font-weight: 700;
+        }
+
+
+        .agregar_as button{
+          font-size:12px;
+          background: yellow;
+          border:solid 1px Green;
+          width: 150px;
+          height: 30px;
+          float: right;
+          margin-right: 250px;
+          margin-bottom: 5px;
+          }
+
+
+/*===========================editar_pa========================================*/
+
+.editar_pa{
+  background-color: #eddddd;
+  color: #000000;
+  font-size: 12px;
+  width: auto;
+  padding-left: 10px;
+  border:solid 10px LightSteelBlue;
+  overflow: hidden;
+  }
+
+.selector_p{
+  display: flex;
+  justify-content: end;
+}
+
+.actualizar_p{
+  display: flex;
+  justify-content: end;
+
+}
+
+  .editar_pa h1{
+    text-align: center;
+    font-size: 16px; 
+    font-weight: 700;         
+    } 
+
+  .ajustar_pa{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 150px;
+   
+  }
+
+
+  .editar_pa ol li{
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+  
+  .editar_pa input{
+    font-size:12px;
+    background: yellow;
+    color: #000000;
+    border:solid 1px Green;
+    border-radius: 5px;
+    float: right;
+    width: 150px;
+    height: 30px;
+    margin-bottom: 5px;
+    }
+  
+  .editar_pa select{
+      font-size:12px;
+      background: yellow;
+      color: #000000;
+      border:solid 1px Green;
+      border-radius: 5px;
+      float: left;
+      width: 150px;
+      height: 30px;
+      margin-bottom: 5px;
+    }
+
+  .editar_pa label{
+        font-weight: 700;
+    }
+
+
+    .editar_pa button{
+      font-size:12px;
+      background: yellow;
+      border:solid 1px Green;
+      width: 150px;
+      height: 30px;
+      float: right;
+      margin-right: 250px;
+      margin-bottom: 5px;
+      }
+
+
+/*===========================editar_as========================================*/
+
+.editar_as{
+  background-color: #eddddd;
+  color: #000000;
+  font-size: 12px;
+  width: auto;
+  padding-left: 10px;
+  border:solid 10px LightSteelBlue;
+  overflow: hidden;
+  }
+
+  .editar_as{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }  
+
+  .editar_as h1{
+    text-align: center;
+    font-size: 16px; 
+    font-weight: 700;         
+    } 
+
+  .editar_as ol li{
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+  
+  .editar_as input{
+    font-size:12px;
+    background: yellow;
+    color: #000000;
+    border:solid 1px Green;
+    border-radius: 5px;
+    float: left;
+    width: 150px;
+    height: 30px;
+    margin-left: 120px;
+    }
+  
+  .editar_as select{
+      font-size:12px;
+      background: yellow;
+      color: #000000;
+      border:solid 1px Green;
+      border-radius: 5px;
+      float: left;
+      width: 150px;
+      height: 30px;
+      margin-left: 20px;
+    }
+
+  .editar_as label{
+        font-weight: 700;
+    }
+
+
+    .editar_as button{
+      font-size:12px;
+      background: yellow;
+      border:solid 1px Green;
+      width: 150px;
+      height: 30px;
+      float: right;
+      margin-right: 250px;
+      margin-bottom: 5px;
+      }   
+
+      .msg{
+      color: rgb(255, 87, 20);
+      font-size: 16px;
+      } 
+          
+ 
+
+/*-----------------------------------login ------------------------*/        
+      .login{
+          background-color: #eddddd;
+          color: #000000;
+          font-size: 12px;
+          padding: 10px;
+          width: auto;
+          border:solid 10px LightSteelBlue;
+          overflow: hidden;
+          margin-top: 10px;
+          }
+          
+
+          
+      .login h1{
+          text-align: center;
+          margin-bottom: 10px;  
+          color: #000000;
+          font-size: 16px;          
+          }        
+          
+      .login  ol li{
+          line-height: 25px;
+          list-style: none;
+        padding-top: 10px;
+          }
+          
+      
+.login select{
+        font-size:12px;
+        background: yellow;
+        border:solid 1px Green;
+        border-radius: 5px;
+        float: right;
+        margin-right: 20px;        
+        width: 250px;
+        height: 30px;
+    }
+
+.login select option{
+        background:white;
+        color:red;
+    }
+
+.login select option:disabled{              
+        background: blue;
+    }
+      
+.login input{
+        font-size:12px;
+        background: yellow;
+        border:solid 1px Green;
+        border-radius: 5px;
+        float: right;
+        margin-right: 20px;  
+        height: 30px; 
+        width: 250px;
+    }
+      
+.login button{
+        font-size:12px;
+        background: yellow;
+        border:solid 1px Green;
+        border-radius: 5px;
+        float: right;
+        margin-right: 20px;  
+        height: 30px; 
+        width: 250px;             
+    }        
+
